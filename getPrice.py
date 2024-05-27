@@ -15,7 +15,6 @@ def obter_preco_google(ticker):
     soup = BeautifulSoup(response.text, 'html.parser')
     
     try:
-        # Localiza o preço do ticker na página
         price_span = soup.find("span", {"jsname": "vWLAgc"})
         if price_span:
             price = price_span.text.replace(",", ".")
@@ -25,20 +24,18 @@ def obter_preco_google(ticker):
     except Exception as e:
         raise Exception(f"Erro ao processar os dados para {ticker}: {e}")
 
-# Carrega tickers do arquivo JSON
-with open('tickers.json', 'r', encoding='utf-8') as file:
-    tickers_data = json.load(file)
-    tickers = tickers_data['tickers']
+def carregar_dados_acoes(filename='tickers.json'):
+    with open(filename, 'r', encoding='utf-8') as file:
+        tickers_data = json.load(file)
+        tickers = tickers_data['tickers']
 
-dados_acoes = {}
+    dados_acoes = {}
 
-for ticker in tickers:
-    try:
-        preco = obter_preco_google(ticker)
-        dados_acoes[ticker] = {"preco": preco}
-    except Exception as e:
-        print(f"Erro ao obter dados para {ticker}: {e}")
+    for ticker in tickers:
+        try:
+            preco = obter_preco_google(ticker)
+            dados_acoes[ticker] = {"preco": preco}
+        except Exception as e:
+            print(f"Erro ao obter dados para {ticker}: {e}")
 
-print("Preços das Ações:")
-for ticker, dados in dados_acoes.items():
-    print(f"{ticker}: Preço: {dados['preco']:.2f} BRL")
+    return dados_acoes
