@@ -2,42 +2,17 @@ import time
 import logging
 import tkinter as tk
 from tkinter import ttk
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from getPrice import obter_preco_google
-import json
+import asyncio
+from getPrice import carregar_dados_acoes
 
 # Configurar logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
-def carregar_dados_acoes_paralelo(filename='tickers.json'):
-    with open(filename, 'r', encoding='utf-8') as file:
-        tickers_data = json.load(file)
-        tickers = tickers_data['tickers']
-
-    dados_acoes = {}
-
-    def fetch_preco(ticker):
-        try:
-            preco = obter_preco_google(ticker)
-            return ticker, preco
-        except Exception as e:
-            logging.error(f"Erro ao obter dados para {ticker}: {e}")
-            return ticker, None
-
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        future_to_ticker = {executor.submit(fetch_preco, ticker): ticker for ticker in tickers}
-        for future in as_completed(future_to_ticker):
-            ticker, preco = future.result()
-            if preco is not None:
-                dados_acoes[ticker] = {"preco": preco}
-
-    return dados_acoes
-
-def exibir_dados_acoes():
+async def exibir_dados_acoes():
     start_time = time.time()
     logging.info("Iniciando a carga dos dados das ações...")
 
-    dados_acoes = carregar_dados_acoes_paralelo()
+    dados_acoes = await carregar_dados_acoes()
 
     end_time = time.time()
     logging.info(f"Dados carregados em {end_time - start_time:.2f} segundos")
@@ -68,4 +43,4 @@ def exibir_dados_acoes():
     root.mainloop()
 
 if __name__ == "__main__":
-    exibir_dados_acoes()
+    asyncio.run(exibir_dados_acoes())
