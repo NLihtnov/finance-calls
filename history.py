@@ -1,6 +1,7 @@
 import datetime
 import asyncio
 import aiohttp
+import json
 
 async def obter_preco_historico(ticker):
     url = 'https://www.infomoney.com.br/wp-json/infomoney/v1/quotes/history'
@@ -31,7 +32,7 @@ async def obter_preco_historico(ticker):
             else:
                 response.raise_for_status()
 
-def obter_valor_3_dias_atras(dados):
+def obter_valor_3_dias_atras(dados, ticker):
     # Data atual
     hoje = datetime.datetime.now()
     # Data de 3 dias atrás
@@ -41,15 +42,25 @@ def obter_valor_3_dias_atras(dados):
     for item in dados:
         if item[0]['display'] == tres_dias_atras_str:
             valor_acao = item[2]
-            print(f"Valor da ação em {tres_dias_atras_str}: {valor_acao}")
+            print(f"Valor da ação {ticker} em {tres_dias_atras_str}: {valor_acao}")
             return
 
-    print(f"Dados para a data {tres_dias_atras_str} não encontrados.")
+    print(f"Dados para a data {tres_dias_atras_str} não encontrados para o ticker {ticker}.")
 
 async def main():
-    ticker = 'VALE3'
-    dados = await obter_preco_historico(ticker)
-    obter_valor_3_dias_atras(dados)
+    # Lê o arquivo tickers.json
+    with open('tickers.json', 'r') as file:
+        tickers_data = json.load(file)
+    
+    tickers = tickers_data['tickers']
+
+    # Itera sobre os tickers e obtém os dados históricos
+    for ticker in tickers:
+        try:
+            dados = await obter_preco_historico(ticker)
+            obter_valor_3_dias_atras(dados, ticker)
+        except Exception as e:
+            print(f"Erro ao obter dados para {ticker}: {e}")
 
 if __name__ == "__main__":
     asyncio.run(main())
