@@ -26,7 +26,7 @@ async def obter_preco_historico(ticker):
     }
     data = {
         'page': 0,
-        'numberItems': 50,
+        'numberItems': 5000,
         'symbol': ticker
     }
 
@@ -37,45 +37,58 @@ async def obter_preco_historico(ticker):
             else:
                 response.raise_for_status()
 
-def obter_valor_3_dias_atras(dados):
+def obter_valor_n_dias_atras(dados, dias):
     hoje = datetime.datetime.now()
-    tres_dias_atras = hoje - datetime.timedelta(days=3)
-    tres_dias_atras_str = tres_dias_atras.strftime('%d/%m/%Y')
+    data_alvo = hoje - datetime.timedelta(days=dias)
+    data_alvo_str = data_alvo.strftime('%d/%m/%Y')
 
     for item in dados:
-        if item[0]['display'] == tres_dias_atras_str:
+        if item[0]['display'] == data_alvo_str:
             valor_acao = item[2]
-            return valor_acao, tres_dias_atras_str
+            return valor_acao, data_alvo_str
 
-    return None, tres_dias_atras_str
+    return None, data_alvo_str
 
 async def carregar_dados_historicos(tickers, arquivo_json='dados_historicos.json'):
     dados_historicos = carregar_arquivo_json(arquivo_json)
     resultados_finais = {}
 
+    intervalos = {
+        "3_dias": 3,
+        "5_dias": 5,
+        "10_dias": 10,
+        "30_dias": 30,
+        "60_dias": 60,
+        "90_dias": 90,
+        "1_ano": 365,
+        "2_anos": 365*2,
+        "3_anos": 365*3,
+        "5_anos": 365*5
+    }
+
     for ticker in tickers:
         try:
-            # Verificar se os dados já estão no arquivo e são de 3 dias atrás
-            hoje = datetime.datetime.now()
-            tres_dias_atras = hoje - datetime.timedelta(days=3)
-            tres_dias_atras_str = tres_dias_atras.strftime('%d/%m/%Y')
-
-            if ticker in dados_historicos and dados_historicos[ticker]['data'] == tres_dias_atras_str:
-                preco_historico = dados_historicos[ticker]['preco_historico']
-            else:
-                # Buscar dados da API
-                dados = await obter_preco_historico(ticker)
-                preco_historico, data = obter_valor_3_dias_atras(dados)
+            # Buscar dados da API
+            dados = await obter_preco_historico(ticker)
+            historico_ticker = {}
+            for nome_intervalo, dias in intervalos.items():
+                preco_historico, data = obter_valor_n_dias_atras(dados, dias)
                 if preco_historico is not None:
-                    dados_historicos[ticker] = {
+                    historico_ticker[nome_intervalo] = {
                         'preco_historico': preco_historico,
                         'data': data
                     }
-                    salvar_arquivo_json(dados_historicos, arquivo_json)
-            resultados_finais[ticker] = {"preco_historico": preco_historico}
+                else:
+                    historico_ticker[nome_intervalo] = {
+                        'preco_historico': None,
+                        'data': data
+                    }
+            dados_historicos[ticker] = historico_ticker
+            salvar_arquivo_json(dados_historicos, arquivo_json)
+            resultados_finais[ticker] = historico_ticker
         except Exception as e:
             print(f"Erro ao obter dados para {ticker}: {e}")
-            resultados_finais[ticker] = {"preco_historico": None}
+            resultados_finais[ticker] = {nome_intervalo: {"preco_historico": None, "data": None} for nome_intervalo in intervalos}
 
     return resultados_finais
 

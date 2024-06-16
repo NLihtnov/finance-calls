@@ -33,21 +33,21 @@ async def exibir_dados_acoes():
     frame.pack(fill=tk.BOTH, expand=True)
 
     tree = ttk.Treeview(frame)
-    tree["columns"] = ("ticker", "preco", "preco_historico")
-    tree.column("#0", width=0, stretch=tk.NO)
-    tree.column("ticker", anchor=tk.W, width=80)
-    tree.column("preco", anchor=tk.W, width=100)
-    tree.column("preco_historico", anchor=tk.W, width=150)
+    columns = ["ticker", "preco", "3_dias", "5_dias", "10_dias", "30_dias", "60_dias", "90_dias", "1_ano", "2_anos", "3_anos", "5_anos"]
+    tree["columns"] = columns
 
-    tree.heading("#0", text="", anchor=tk.W)
-    tree.heading("ticker", text="Ticker", anchor=tk.W)
-    tree.heading("preco", text="Preço (BRL)", anchor=tk.W)
-    tree.heading("preco_historico", text="Preço 3 dias atrás (BRL)", anchor=tk.W)
+    tree.column("#0", width=0, stretch=tk.NO)
+    for col in columns:
+        tree.column(col, anchor=tk.W, width=100)
+        tree.heading(col, text=col.replace("_", " ").title(), anchor=tk.W)
 
     for ticker, dados in dados_acoes.items():
-        preco_historico = dados_historicos.get(ticker, {}).get("preco_historico", "N/A")
-        preco_historico_str = f"{preco_historico:.2f}" if isinstance(preco_historico, (int, float)) else preco_historico
-        tree.insert("", "end", values=(ticker, f"{dados['preco']:.2f}", preco_historico_str))
+        valores = [ticker, f"{dados['preco']:.2f}"]
+        for intervalo in columns[2:]:
+            preco_historico = dados_historicos.get(ticker, {}).get(intervalo, {}).get("preco_historico", "N/A")
+            preco_historico_str = f"{preco_historico:.2f}" if isinstance(preco_historico, (int, float)) else preco_historico
+            valores.append(preco_historico_str)
+        tree.insert("", "end", values=valores)
 
     tree.pack(fill=tk.BOTH, expand=True)
 
