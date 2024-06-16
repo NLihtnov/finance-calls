@@ -33,34 +33,34 @@ async def obter_preco_historico(ticker):
                 response.raise_for_status()
 
 def obter_valor_3_dias_atras(dados, ticker):
-    # Data atual
     hoje = datetime.datetime.now()
-    # Data de 3 dias atrás
     tres_dias_atras = hoje - datetime.timedelta(days=3)
     tres_dias_atras_str = tres_dias_atras.strftime('%d/%m/%Y')
 
     for item in dados:
         if item[0]['display'] == tres_dias_atras_str:
             valor_acao = item[2]
-            print(f"Valor da ação {ticker} em {tres_dias_atras_str}: {valor_acao}")
-            return
+            return valor_acao
 
-    print(f"Dados para a data {tres_dias_atras_str} não encontrados para o ticker {ticker}.")
+    return None
 
-async def main():
-    # Lê o arquivo tickers.json
-    with open('tickers.json', 'r') as file:
-        tickers_data = json.load(file)
-    
-    tickers = tickers_data['tickers']
+async def carregar_dados_historicos(tickers):
+    dados_historicos = {}
 
-    # Itera sobre os tickers e obtém os dados históricos
-    for ticker in tickers:
+    async def fetch_historico(ticker):
         try:
             dados = await obter_preco_historico(ticker)
-            obter_valor_3_dias_atras(dados, ticker)
+            preco_historico = obter_valor_3_dias_atras(dados, ticker)
+            return ticker, preco_historico
         except Exception as e:
             print(f"Erro ao obter dados para {ticker}: {e}")
+            return ticker, None
 
-if __name__ == "__main__":
-    asyncio.run(main())
+    tasks = [fetch_historico(ticker) for ticker in tickers]
+    results = await asyncio.gather(*tasks)
+
+    for ticker, preco_historico in results:
+        if preco_historico is not None:
+            dados_historicos[ticker] = {"preco_historico": preco_historico}
+
+    return dados_historicos
