@@ -1,10 +1,13 @@
+# interface.py
+
 import time
 import logging
 import tkinter as tk
 from tkinter import ttk
 import asyncio
+from threading import Thread
 from getPrice import carregar_dados_acoes
-from history import carregar_dados_historicos
+from history import carregar_dados_historicos, atualizar_dados_periodicamente
 
 # Configurar logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
@@ -52,4 +55,11 @@ async def exibir_dados_acoes():
     root.mainloop()
 
 if __name__ == "__main__":
+    # Iniciar atualização periódica em segundo plano
+    tickers = ['PETR4', 'VALE3', 'ITUB4']
+    thread = Thread(target=atualizar_dados_periodicamente, args=(60, tickers, 'dados_historicos.json'))
+    thread.daemon = True
+    thread.start()
+
+    # Executar a interface
     asyncio.run(exibir_dados_acoes())

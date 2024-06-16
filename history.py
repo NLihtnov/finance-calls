@@ -1,7 +1,12 @@
+# history.py
+
 import datetime
 import asyncio
 import aiohttp
 import json
+import os
+from threading import Thread
+import time
 
 async def obter_preco_historico(ticker):
     url = 'https://www.infomoney.com.br/wp-json/infomoney/v1/quotes/history'
@@ -32,7 +37,7 @@ async def obter_preco_historico(ticker):
             else:
                 response.raise_for_status()
 
-def obter_valor_3_dias_atras(dados, ticker):
+def obter_valor_3_dias_atras(dados):
     hoje = datetime.datetime.now()
     tres_dias_atras = hoje - datetime.timedelta(days=3)
     tres_dias_atras_str = tres_dias_atras.strftime('%d/%m/%Y')
@@ -40,27 +45,59 @@ def obter_valor_3_dias_atras(dados, ticker):
     for item in dados:
         if item[0]['display'] == tres_dias_atras_str:
             valor_acao = item[2]
-            return valor_acao
+            return valor_acao, tres_dias_atras_str
 
-    return None
+    return None, tres_dias_atras_str
 
-async def carregar_dados_historicos(tickers):
-    dados_historicos = {}
+async def carregar_dados_historicos(tickers, arquivo_json='dados_historicos.json'):
+    dados_historicos = carregar_arquivo_json(arquivo_json)
+    resultados_finais = {}
 
-    async def fetch_historico(ticker):
+    for ticker in tickers:
         try:
-            dados = await obter_preco_historico(ticker)
-            preco_historico = obter_valor_3_dias_atras(dados, ticker)
-            return ticker, preco_historico
+            # Verificar se os dados já estão no arquivo e são de 3 dias atrás
+            hoje = datetime.datetime.now()
+            tres_dias_atras = hoje - datetime.timedelta(days=3)
+            tres_dias_atras_str = tres_dias_atras.strftime('%d/%m/%Y')
+
+            if ticker in dados_historicos and dados_historicos[ticker]['data'] == tres_dias_atras_str:
+                preco_historico = dados_historicos[ticker]['preco_historico']
+            else:
+                # Buscar dados da API
+                dados = await obter_preco_historico(ticker)
+                preco_historico, data = obter_valor_3_dias_atras(dados)
+                if preco_historico is not None:
+                    dados_historicos[ticker] = {
+                        'preco_historico': preco_historico,
+                        'data': data
+                    }
+                    salvar_arquivo_json(dados_historicos, arquivo_json)
+            resultados_finais[ticker] = {"preco_historico": preco_historico}
         except Exception as e:
             print(f"Erro ao obter dados para {ticker}: {e}")
-            return ticker, None
+            resultados_finais[ticker] = {"preco_historico": None}
 
-    tasks = [fetch_historico(ticker) for ticker in tickers]
-    results = await asyncio.gather(*tasks)
+    return resultados_finais
 
-    for ticker, preco_historico in results:
-        if preco_historico is not None:
-            dados_historicos[ticker] = {"preco_historico": preco_historico}
+def carregar_arquivo_json(arquivo):
+    if os.path.exists(arquivo):
+        with open(arquivo, 'r') as f:
+            return json.load(f)
+    return {}
 
-    return dados_historicos
+def salvar_arquivo_json(dados, arquivo):
+    with open(arquivo, 'w') as f:
+        json.dump(dados, f, indent=4)
+
+def atualizar_dados_periodicamente(intervalo, tickers, arquivo_json):
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    while True:
+        loop.run_until_complete(carregar_dados_historicos(tickers, arquivo_json))
+        time.sleep(intervalo)
+
+# Exemplo de uso
+if __name__ == "__main__":
+    tickers = ['PETR4', 'VALE3', 'ITUB4']
+    dados = asyncio.run(carregar_dados_historicos(tickers))
+    print(dados)

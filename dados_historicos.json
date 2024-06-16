@@ -1,0 +1,330 @@
+{
+    "VALE3": {
+        "preco_historico": "60,83",
+        "data": "13/06/2024"
+    },
+    "PETR4": {
+        "preco_historico": "35,46",
+        "data": "13/06/2024"
+    },
+    "BRSR6": {
+        "preco_historico": "10,93",
+        "data": "13/06/2024"
+    },
+    "BBAS3": {
+        "preco_historico": "26,55",
+        "data": "13/06/2024"
+    },
+    "CMIG4": {
+        "preco_historico": "10,14",
+        "data": "13/06/2024"
+    },
+    "CVCB3": {
+        "preco_historico": "1,93",
+        "data": "13/06/2024"
+    },
+    "SBSP3": {
+        "preco_historico": "74,47",
+        "data": "13/06/2024"
+    },
+    "ITUB4": {
+        "preco_historico": "31,17",
+        "data": "13/06/2024"
+    },
+    "AMER3": {
+        "preco_historico": "0,39",
+        "data": "13/06/2024"
+    },
+    "CSAN3": {
+        "preco_historico": "12,46",
+        "data": "13/06/2024"
+    },
+    "CPLE6": {
+        "preco_historico": "9,30",
+        "data": "13/06/2024"
+    },
+    "WEGE3": {
+        "preco_historico": "38,42",
+        "data": "13/06/2024"
+    },
+    "IRBR3": {
+        "preco_historico": "31,87",
+        "data": "13/06/2024"
+    },
+    "RAIL3": {
+        "preco_historico": "19,39",
+        "data": "13/06/2024"
+    },
+    "MGLU3": {
+        "preco_historico": "11,22",
+        "data": "13/06/2024"
+    },
+    "BBSE3": {
+        "preco_historico": "32,51",
+        "data": "13/06/2024"
+    },
+    "ITSA4": {
+        "preco_historico": "9,57",
+        "data": "13/06/2024"
+    },
+    "JBSS3": {
+        "preco_historico": "29,06",
+        "data": "13/06/2024"
+    },
+    "GGBR4": {
+        "preco_historico": "17,33",
+        "data": "13/06/2024"
+    },
+    "AERI3": {
+        "preco_historico": "6,40",
+        "data": "13/06/2024"
+    },
+    "ALPA4": {
+        "preco_historico": "9,29",
+        "data": "13/06/2024"
+    },
+    "ABEV3": {
+        "preco_historico": "11,09",
+        "data": "13/06/2024"
+    },
+    "ARZZ3": {
+        "preco_historico": "49,10",
+        "data": "13/06/2024"
+    },
+    "ASAI3": {
+        "preco_historico": "11,57",
+        "data": "13/06/2024"
+    },
+    "AZUL4": {
+        "preco_historico": "9,20",
+        "data": "13/06/2024"
+    },
+    "B3SA3": {
+        "preco_historico": "10,08",
+        "data": "13/06/2024"
+    },
+    "BBDC3": {
+        "preco_historico": "11,28",
+        "data": "13/06/2024"
+    },
+    "BBDC4": {
+        "preco_historico": "12,70",
+        "data": "13/06/2024"
+    },
+    "BEEF3": {
+        "preco_historico": "6,13",
+        "data": "13/06/2024"
+    },
+    "BPAC11": {
+        "preco_historico": "31,88",
+        "data": "13/06/2024"
+    },
+    "BRAP4": {
+        "preco_historico": "18,24",
+        "data": "13/06/2024"
+    },
+    "BRKM5": {
+        "preco_historico": "18,37",
+        "data": "13/06/2024"
+    },
+    "CASH3": {
+        "preco_historico": "5,87",
+        "data": "13/06/2024"
+    },
+    "CCRO3": {
+        "preco_historico": "11,53",
+        "data": "13/06/2024"
+    },
+    "CIEL3": {
+        "preco_historico": "5,64",
+        "data": "13/06/2024"
+    },
+    "CMIN3": {
+        "preco_historico": "4,99",
+        "data": "13/06/2024"
+    },
+    "COGN3": {
+        "preco_historico": "1,66",
+        "data": "13/06/2024"
+    },
+    "CPFE3": {
+        "preco_historico": "32,54",
+        "data": "13/06/2024"
+    },
+    "CRFB3": {
+        "preco_historico": "9,41",
+        "data": "13/06/2024"
+    },
+    "CSNA3": {
+        "preco_historico": "11,90",
+        "data": "13/06/2024"
+    },
+    "CYRE3": {
+        "preco_historico": "18,98",
+        "data": "13/06/2024"
+    },
+    "DXCO3": {
+        "preco_historico": "6,66",
+        "data": "13/06/2024"
+    },
+    "ECOR3": {
+        "preco_historico": "6,19",
+        "data": "13/06/2024"
+    },
+    "EGIE3": {
+        "preco_historico": "43,61",
+        "data": "13/06/2024"
+    },
+    "ELET3": {
+        "preco_historico": "35,58",
+        "data": "13/06/2024"
+    },
+    "ELET6": {
+        "preco_historico": "39,80",
+        "data": "13/06/2024"
+    },
+    "EMBR3": {
+        "preco_historico": "39,44",
+        "data": "13/06/2024"
+    },
+    "ENGI11": {
+        "preco_historico": "44,55",
+        "data": "13/06/2024"
+    },
+    "EQTL3": {
+        "preco_historico": "29,05",
+        "data": "13/06/2024"
+    },
+    "EZTC3": {
+        "preco_historico": "12,95",
+        "data": "13/06/2024"
+    },
+    "FLRY3": {
+        "preco_historico": "14,25",
+        "data": "13/06/2024"
+    },
+    "GOAU4": {
+        "preco_historico": "10,10",
+        "data": "13/06/2024"
+    },
+    "GOLL4": {
+        "preco_historico": "1,08",
+        "data": "13/06/2024"
+    },
+    "HAPV3": {
+        "preco_historico": "3,74",
+        "data": "13/06/2024"
+    },
+    "HYPE3": {
+        "preco_historico": "28,61",
+        "data": "13/06/2024"
+    },
+    "IGTI11": {
+        "preco_historico": "19,55",
+        "data": "13/06/2024"
+    },
+    "KLBN11": {
+        "preco_historico": "20,45",
+        "data": "13/06/2024"
+    },
+    "LIGT3": {
+        "preco_historico": "5,20",
+        "data": "13/06/2024"
+    },
+    "LREN3": {
+        "preco_historico": "12,59",
+        "data": "13/06/2024"
+    },
+    "MRFG3": {
+        "preco_historico": "10,68",
+        "data": "13/06/2024"
+    },
+    "MRVE3": {
+        "preco_historico": "6,61",
+        "data": "13/06/2024"
+    },
+    "MULT3": {
+        "preco_historico": "22,45",
+        "data": "13/06/2024"
+    },
+    "NTCO3": {
+        "preco_historico": "14,89",
+        "data": "13/06/2024"
+    },
+    "PCAR3": {
+        "preco_historico": "3,00",
+        "data": "13/06/2024"
+    },
+    "PETR3": {
+        "preco_historico": "37,02",
+        "data": "13/06/2024"
+    },
+    "POSI3": {
+        "preco_historico": "8,82",
+        "data": "13/06/2024"
+    },
+    "PRIO3": {
+        "preco_historico": "41,86",
+        "data": "13/06/2024"
+    },
+    "QUAL3": {
+        "preco_historico": "1,73",
+        "data": "13/06/2024"
+    },
+    "RADL3": {
+        "preco_historico": "24,96",
+        "data": "13/06/2024"
+    },
+    "RENT3": {
+        "preco_historico": "40,18",
+        "data": "13/06/2024"
+    },
+    "SANB11": {
+        "preco_historico": "27,00",
+        "data": "13/06/2024"
+    },
+    "SAPR11": {
+        "preco_historico": "26,42",
+        "data": "13/06/2024"
+    },
+    "SLCE3": {
+        "preco_historico": "17,56",
+        "data": "13/06/2024"
+    },
+    "SMTO3": {
+        "preco_historico": "30,98",
+        "data": "13/06/2024"
+    },
+    "SUZB3": {
+        "preco_historico": "48,77",
+        "data": "13/06/2024"
+    },
+    "TAEE11": {
+        "preco_historico": "33,35",
+        "data": "13/06/2024"
+    },
+    "TIMS3": {
+        "preco_historico": "15,58",
+        "data": "13/06/2024"
+    },
+    "TOTS3": {
+        "preco_historico": "29,59",
+        "data": "13/06/2024"
+    },
+    "UGPA3": {
+        "preco_historico": "21,71",
+        "data": "13/06/2024"
+    },
+    "USIM5": {
+        "preco_historico": "7,16",
+        "data": "13/06/2024"
+    },
+    "VIVT3": {
+        "preco_historico": "44,03",
+        "data": "13/06/2024"
+    },
+    "YDUQ3": {
+        "preco_historico": "11,30",
+        "data": "13/06/2024"
+    }
+}
