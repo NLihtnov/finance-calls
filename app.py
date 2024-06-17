@@ -1,5 +1,5 @@
 # interface.py
-
+import json
 import time
 import logging
 import tkinter as tk
@@ -42,23 +42,53 @@ async def exibir_dados_acoes():
         tree.heading(col, text=col.replace("_", " ").title(), anchor=tk.W)
 
     for ticker, dados in dados_acoes.items():
-        valores = [ticker, f"{dados['preco']:.2f}"]
+        valores = [ticker]
+        preco_atual = dados['preco']
+        preco_atual_str = f"{preco_atual:.2f}"
+        valores.append(preco_atual_str)
+
         for intervalo in columns[2:]:
             preco_historico = dados_historicos.get(ticker, {}).get(intervalo, {}).get("preco_historico", "N/A")
-            preco_historico_str = f"{preco_historico:.2f}" if isinstance(preco_historico, (int, float)) else preco_historico
-            valores.append(preco_historico_str)
+            if isinstance(preco_historico, (int, float)):
+                preco_historico_str = f"{preco_historico:.2f}"
+                if preco_atual > preco_historico:
+                    preco_atual_str = f"{preco_atual:.2f} ↑"
+                    valores.append((preco_historico_str, 'green'))
+                elif preco_atual < preco_historico:
+                    preco_atual_str = f"{preco_atual:.2f} ↓"
+                    valores.append((preco_historico_str, 'red'))
+                else:
+                    valores.append(preco_historico_str)
+            else:
+                valores.append(preco_historico)
+
         tree.insert("", "end", values=valores)
 
     tree.pack(fill=tk.BOTH, expand=True)
+
+    def set_cell_style(tree, col, val, tag, row):
+        if isinstance(val, tuple):
+            val, color = val
+            tree.set(row, col, val)
+            tree.tag_configure(tag, foreground=color)
+
+    for row in tree.get_children():
+        for col in columns[1:]:
+            set_cell_style(tree, col, tree.set(row, col), f"{col}_style", row)
 
     logging.info("Janela exibida")
     root.mainloop()
 
 if __name__ == "__main__":
+    # Ler o array de tickers do arquivo JSON
+    with open('tickers.json', 'r') as file:
+        tickers_data = json.load(file)
+        tickers = tickers_data['tickers']  # Supondo que o arquivo JSON tenha um formato {"tickers": ["PETR4", "VALE3", "ITUB4"]}
+
     # Iniciar atualização periódica em segundo plano
-    tickers = ['PETR4', 'VALE3', 'ITUB4']
     thread = Thread(target=atualizar_dados_periodicamente, args=(60, tickers, 'dados_historicos.json'))
     thread.daemon = True
+    logging.info("Atualização de dados iniciada")
     thread.start()
 
     # Executar a interface

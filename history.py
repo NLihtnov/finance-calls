@@ -1,5 +1,3 @@
-# history.py
-
 import datetime
 import asyncio
 import aiohttp
@@ -7,6 +5,8 @@ import json
 import os
 from threading import Thread
 import time
+import requests
+from bs4 import BeautifulSoup
 
 async def obter_preco_historico(ticker):
     url = 'https://www.infomoney.com.br/wp-json/infomoney/v1/quotes/history'
@@ -60,14 +60,23 @@ async def carregar_dados_historicos(tickers, arquivo_json='dados_historicos.json
         "30_dias": 30,
         "60_dias": 60,
         "90_dias": 90,
-        "1_ano": 365,
-        "2_anos": 365*2,
-        "3_anos": 365*3,
-        "5_anos": 365*5
+        "1_ano": 365
     }
 
     for ticker in tickers:
         try:
+            # Verificar se já existe dados no arquivo JSON
+            if ticker in dados_historicos:
+                historico_ticker = dados_historicos[ticker]
+                dados_atuais = False  # Flag para verificar se há necessidade de atualização
+                for nome_intervalo, valor_intervalo in historico_ticker.items():
+                    if valor_intervalo['preco_historico'] is None:
+                        dados_atuais = True
+                        break
+                if not dados_atuais:
+                    resultados_finais[ticker] = historico_ticker
+                    continue  # Dados atuais disponíveis, passa para o próximo ticker
+
             # Buscar dados da API
             dados = await obter_preco_historico(ticker)
             historico_ticker = {}
@@ -86,6 +95,7 @@ async def carregar_dados_historicos(tickers, arquivo_json='dados_historicos.json
             dados_historicos[ticker] = historico_ticker
             salvar_arquivo_json(dados_historicos, arquivo_json)
             resultados_finais[ticker] = historico_ticker
+
         except Exception as e:
             print(f"Erro ao obter dados para {ticker}: {e}")
             resultados_finais[ticker] = {nome_intervalo: {"preco_historico": None, "data": None} for nome_intervalo in intervalos}
@@ -102,15 +112,18 @@ def salvar_arquivo_json(dados, arquivo):
     with open(arquivo, 'w') as f:
         json.dump(dados, f, indent=4)
 
+def carregar_tickers(arquivo_tickers):
+    if os.path.exists(arquivo_tickers):
+        with open(arquivo_tickers, 'r') as f:
+            tickers_data = json.load(f)
+            return tickers_data.get("tickers", [])
+    return []
+
 def atualizar_dados_periodicamente(intervalo, tickers, arquivo_json):
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     while True:
+        print(f"Iniciando atualização de dados para os tickers: {tickers} às {datetime.datetime.now()}")
         loop.run_until_complete(carregar_dados_historicos(tickers, arquivo_json))
+        print(f"Atualização concluída às {datetime.datetime.now()}")
         time.sleep(intervalo)
-
-# Exemplo de uso
-if __name__ == "__main__":
-    tickers = ['PETR4', 'VALE3', 'ITUB4']
-    dados = asyncio.run(carregar_dados_historicos(tickers))
-    print(dados)

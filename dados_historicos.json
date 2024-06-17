@@ -27,18 +27,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "65,32",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "PETR4": {
@@ -69,18 +57,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "13,92",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "BRSR6": {
@@ -111,18 +87,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "8,49",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "BBAS3": {
@@ -153,18 +117,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "14,28",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CMIG4": {
@@ -189,24 +141,12 @@
             "data": "17/04/2024"
         },
         "90_dias": {
-            "preco_historico": null,
+            "preco_historico": "8,63",
             "data": "18/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": null,
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CVCB3": {
@@ -231,24 +171,12 @@
             "data": "17/04/2024"
         },
         "90_dias": {
-            "preco_historico": null,
+            "preco_historico": "3,36",
             "data": "18/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": null,
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "SBSP3": {
@@ -279,18 +207,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "39,57",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "ITUB4": {
@@ -321,18 +237,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "20,94",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "AMER3": {
@@ -363,18 +267,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "13,53",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CSAN3": {
@@ -399,24 +291,12 @@
             "data": "17/04/2024"
         },
         "90_dias": {
-            "preco_historico": null,
+            "preco_historico": "15,81",
             "data": "18/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": null,
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CPLE6": {
@@ -441,24 +321,12 @@
             "data": "17/04/2024"
         },
         "90_dias": {
-            "preco_historico": null,
+            "preco_historico": "9,70",
             "data": "18/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": null,
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "WEGE3": {
@@ -489,18 +357,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "22,05",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "IRBR3": {
@@ -531,18 +387,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "81,90",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "RAIL3": {
@@ -573,18 +417,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "16,75",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "MGLU3": {
@@ -615,18 +447,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "23,69",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "BBSE3": {
@@ -657,18 +477,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "20,87",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "ITSA4": {
@@ -699,18 +507,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "6,57",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "JBSS3": {
@@ -741,18 +537,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "29,79",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "GGBR4": {
@@ -783,102 +567,66 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "15,48",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "AERI3": {
         "3_dias": {
-            "preco_historico": "6,40",
-            "data": "13/06/2024"
+            "preco_historico": "6,33",
+            "data": "14/06/2024"
         },
         "5_dias": {
-            "preco_historico": "6,50",
-            "data": "11/06/2024"
+            "preco_historico": "6,51",
+            "data": "12/06/2024"
         },
         "10_dias": {
-            "preco_historico": "7,37",
-            "data": "06/06/2024"
+            "preco_historico": "6,85",
+            "data": "07/06/2024"
         },
         "30_dias": {
-            "preco_historico": "10,22",
-            "data": "17/05/2024"
+            "preco_historico": null,
+            "data": "18/05/2024"
         },
         "60_dias": {
-            "preco_historico": "0,57",
-            "data": "17/04/2024"
+            "preco_historico": "0,55",
+            "data": "18/04/2024"
         },
         "90_dias": {
             "preco_historico": "0,56",
-            "data": "18/03/2024"
+            "data": "19/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
-            "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "2,80",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
+            "data": "18/06/2023"
         }
     },
     "ALPA4": {
         "3_dias": {
-            "preco_historico": "9,29",
-            "data": "13/06/2024"
+            "preco_historico": "9,15",
+            "data": "14/06/2024"
         },
         "5_dias": {
-            "preco_historico": "9,60",
-            "data": "11/06/2024"
+            "preco_historico": "9,48",
+            "data": "12/06/2024"
         },
         "10_dias": {
-            "preco_historico": "9,60",
-            "data": "06/06/2024"
+            "preco_historico": "9,53",
+            "data": "07/06/2024"
         },
         "30_dias": {
-            "preco_historico": "9,93",
-            "data": "17/05/2024"
+            "preco_historico": null,
+            "data": "18/05/2024"
         },
         "60_dias": {
-            "preco_historico": "8,35",
-            "data": "17/04/2024"
+            "preco_historico": "8,50",
+            "data": "18/04/2024"
         },
         "90_dias": {
-            "preco_historico": "9,26",
-            "data": "18/03/2024"
+            "preco_historico": "9,15",
+            "data": "19/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
-            "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "20,07",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
+            "data": "18/06/2023"
         }
     },
     "ABEV3": {
@@ -909,18 +657,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "11,95",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "ARZZ3": {
@@ -951,18 +687,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "67,87",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "ASAI3": {
@@ -993,18 +717,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "15,42",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "AZUL4": {
@@ -1035,18 +747,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "14,21",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "B3SA3": {
@@ -1077,18 +777,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "10,77",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "BBDC3": {
@@ -1119,18 +807,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "13,74",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "BBDC4": {
@@ -1161,18 +837,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "16,42",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "BEEF3": {
@@ -1197,24 +861,12 @@
             "data": "17/04/2024"
         },
         "90_dias": {
-            "preco_historico": null,
+            "preco_historico": "6,97",
             "data": "18/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": null,
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "BPAC11": {
@@ -1245,18 +897,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "20,52",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "BRAP4": {
@@ -1287,18 +927,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "20,72",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "BRKM5": {
@@ -1329,18 +957,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "37,36",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CASH3": {
@@ -1371,18 +987,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "8,52",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CCRO3": {
@@ -1413,18 +1017,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "11,79",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CIEL3": {
@@ -1455,18 +1047,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "3,41",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CMIN3": {
@@ -1491,24 +1071,12 @@
             "data": "17/04/2024"
         },
         "90_dias": {
-            "preco_historico": null,
+            "preco_historico": "5,39",
             "data": "18/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": null,
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "COGN3": {
@@ -1533,24 +1101,12 @@
             "data": "17/04/2024"
         },
         "90_dias": {
-            "preco_historico": null,
+            "preco_historico": "2,59",
             "data": "18/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": null,
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CPFE3": {
@@ -1575,24 +1131,12 @@
             "data": "17/04/2024"
         },
         "90_dias": {
-            "preco_historico": null,
+            "preco_historico": "30,99",
             "data": "18/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": null,
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CRFB3": {
@@ -1617,24 +1161,12 @@
             "data": "17/04/2024"
         },
         "90_dias": {
-            "preco_historico": null,
+            "preco_historico": "12,64",
             "data": "18/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": null,
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CSNA3": {
@@ -1659,24 +1191,12 @@
             "data": "17/04/2024"
         },
         "90_dias": {
-            "preco_historico": null,
+            "preco_historico": "14,90",
             "data": "18/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": null,
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "CYRE3": {
@@ -1707,18 +1227,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "11,27",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "DXCO3": {
@@ -1749,18 +1257,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "8,15",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "ECOR3": {
@@ -1791,18 +1287,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "6,14",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "EGIE3": {
@@ -1833,18 +1317,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "36,76",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "ELET3": {
@@ -1875,18 +1347,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "42,16",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "ELET6": {
@@ -1917,18 +1377,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "39,00",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "EMBR3": {
@@ -1959,18 +1407,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "11,58",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "ENGI11": {
@@ -2001,18 +1437,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "41,05",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "EQTL3": {
@@ -2043,18 +1467,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "23,47",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "EZTC3": {
@@ -2085,18 +1497,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "14,35",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "FLRY3": {
@@ -2127,18 +1527,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "12,91",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "GOAU4": {
@@ -2169,18 +1557,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "7,89",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "GOLL4": {
@@ -2211,18 +1587,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "10,22",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "HAPV3": {
@@ -2253,18 +1617,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "6,15",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "HYPE3": {
@@ -2295,18 +1647,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "35,99",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "IGTI11": {
@@ -2337,18 +1677,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "17,34",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "KLBN11": {
@@ -2373,24 +1701,12 @@
             "data": "17/04/2024"
         },
         "90_dias": {
-            "preco_historico": null,
+            "preco_historico": "21,41",
             "data": "18/03/2024"
         },
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": null,
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "LIGT3": {
@@ -2421,18 +1737,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "8,00",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "LREN3": {
@@ -2463,18 +1767,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "22,24",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "MRFG3": {
@@ -2505,18 +1797,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "11,13",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "MRVE3": {
@@ -2547,18 +1827,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "7,82",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "MULT3": {
@@ -2589,18 +1857,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "20,95",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "NTCO3": {
@@ -2631,18 +1887,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "13,87",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "PCAR3": {
@@ -2673,18 +1917,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "7,41",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "PETR3": {
@@ -2715,18 +1947,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "16,16",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "POSI3": {
@@ -2757,18 +1977,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "5,75",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "PRIO3": {
@@ -2799,18 +2007,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "23,00",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "QUAL3": {
@@ -2841,18 +2037,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "13,76",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "RADL3": {
@@ -2883,18 +2067,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "17,97",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "RENT3": {
@@ -2925,18 +2097,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "48,10",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "SANB11": {
@@ -2967,18 +2127,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "27,11",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "SAPR11": {
@@ -3009,18 +2157,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "16,65",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "SLCE3": {
@@ -3051,18 +2187,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "21,29",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "SMTO3": {
@@ -3093,18 +2217,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "40,70",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "SUZB3": {
@@ -3135,18 +2247,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "46,46",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "TAEE11": {
@@ -3177,18 +2277,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "32,98",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "TIMS3": {
@@ -3219,18 +2307,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "11,23",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "TOTS3": {
@@ -3261,18 +2337,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "23,88",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "UGPA3": {
@@ -3303,18 +2367,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "11,77",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "USIM5": {
@@ -3345,18 +2397,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "8,09",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "VIVT3": {
@@ -3387,18 +2427,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "41,05",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     },
     "YDUQ3": {
@@ -3429,18 +2457,6 @@
         "1_ano": {
             "preco_historico": null,
             "data": "17/06/2023"
-        },
-        "2_anos": {
-            "preco_historico": "12,94",
-            "data": "17/06/2022"
-        },
-        "3_anos": {
-            "preco_historico": null,
-            "data": "17/06/2021"
-        },
-        "5_anos": {
-            "preco_historico": null,
-            "data": "18/06/2019"
         }
     }
 }
